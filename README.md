@@ -16,7 +16,7 @@ Mern stack project.
 
 # .env variables
 
-NODE_ENV=development
-PORT=5000
-MONGO_URI=mongouri
-JWT_SECRET=secretkey
+*NODE_ENV=development
+*PORT=5000
+*MONGO_URI=mongouri
+*JWT_SECRET=secretkey
