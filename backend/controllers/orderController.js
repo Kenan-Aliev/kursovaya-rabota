@@ -20,6 +20,12 @@ const addOrderItems = asyncHandler(async (req, res) => {
   } else {
     for (let item of orderItems) {
       const product = await Product.findOne({ _id: item.product });
+      if (product.countInStock - item.qty < 0) {
+        res.status(400);
+        throw new Error(
+          `Not enough ${product.name} in stock. Choose less then ${product.countInStock} count of product`
+        );
+      }
       product.countInStock -= item.qty;
       await product.save();
     }

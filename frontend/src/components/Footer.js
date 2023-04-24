@@ -8,8 +8,8 @@ const Footer = () => {
         <Row>
           <Col className="text-center py-3">
             Copyright &copy;{" "}
-            <a target="_blank" href="https://github.com/Kenan-Aliev">
-              Kenan Aliev
+            <a target="_blank" href="https://github.com/barmacher">
+              Lee Igor
             </a>
           </Col>
         </Row>
